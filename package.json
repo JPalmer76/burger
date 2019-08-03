@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "my-sequelize-heroku",
   "version": "1.0.0",
   "description": "boogers burgurz",
   "main": "server.js",
