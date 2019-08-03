@@ -6,7 +6,7 @@ var exphbs = require("express-handlebars");
 var app = express();
 app.use(express.static(__dirname + "/public"));
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json());
 
 app.use(methodOverride("_method"));
@@ -15,7 +15,7 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-var routes = require("../controllers/routes.js");
+var routes = require("./controllers/routes.js");
 app.use("/", routes);
 
 var port = 8081;

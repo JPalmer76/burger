@@ -4,7 +4,7 @@ var burger = {
     all: function(cb){
         orm.all("burgers", function(res) {
             cb(res);
-        })
+        });
     },
 
     update: function(id, cb) {
